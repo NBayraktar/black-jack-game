@@ -3,6 +3,7 @@
   --color-g-hover: rgba(218, 165, 32, 0.5);
   --text-color: #016f32;
   --color-white: #fff;
+  --color-body: #95b8a7;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
   color: var(--color-white);
   font-weight: bold;
   font-size: 1.5em;
+  background-color: var(--color-body);
 }
 
 h1 {
@@ -50,6 +52,12 @@ button:hover {
   background: url(table.png) no-repeat;
   background-size: cover;
   margin-top: 4em;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
 }
 
 #message-el {
