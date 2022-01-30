@@ -3,10 +3,16 @@ let sum = 0;
 let hasBlackJack = false;
 let isAlive = false;
 let message = '';
+let getName = prompt('What\'s your Name?');
+let player = {
+  getName,
+  chips: 275
+}
 let messageEl = document.getElementById('message-el');
 let sumEl = document.getElementById('sum-el');
 let cardsEl = document.getElementById('cards-el');
-
+let playerEl = document.getElementById('player-el');
+playerEl.textContent = `${player.getName} - £${player.chips}`;
 
 function getRandomCard() {
   let randomNum = Math.floor(Math.random() * 13) + 1;

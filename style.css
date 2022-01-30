@@ -65,3 +65,7 @@ button:hover {
 #message-el {
   font-style: italic;
 }
+
+#player-el {
+  margin-top: 3em;
+}
